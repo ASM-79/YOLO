@@ -4,10 +4,6 @@ import pygame
 from buttonclass import Button
 
 
-
-pygame.init()
-screen = pygame.display.set_mode((800,600))
-
 def get_font(size):
     return pygame.font.Font("/Users/themagendrans/Desktop/Yolo/TitleFont.ttf", size)
 
@@ -56,6 +52,8 @@ def vision():
 
 
 def afterdetection(newframe):
+    pygame.init()
+    screen = pygame.display.set_mode((800,600))
     running = True
     while running:
         MenuMousePos = pygame.mouse.get_pos()

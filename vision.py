@@ -8,7 +8,7 @@ def get_font(size):
     return pygame.font.Font("/Users/themagendrans/Desktop/Yolo/TitleFont.ttf", size)
 
 model = torch.hub.load('/Users/themagendrans/Desktop/Yolo/yolov5', 'custom', 
-                       path='/Users/themagendrans/Desktop/Yolo/yolov5/runs/train/exp3/weights/last.pt', 
+                       path='/Users/themagendrans/Desktop/Yolo/yolov5/runs/train/exp3/weights/best.pt', 
                        source='local')
 newclasses = ['glass', 'cardboard', 'metal', 'plastic', 'styrofoam']
 model.names = newclasses
